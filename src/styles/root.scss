@@ -1,45 +1,46 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
   }
-  
-  button {
-    background: none;
-    border: none;
-    outline: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  
+}
+
+.app {
   .app {
-    .app {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
-  .board {
-    .board-row {
-      display: flex;
-      flex-direction: row;
-      border-bottom: 2px solid #000;
+.board {
+  .board-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #000;
+    &:last-child {
+      border-bottom: none;
+    }
+    .square {
+      width: 80px;
+      height: 80px;
+      border-right: 2px solid #000;
+      font-size: 2.5rem;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.2s;
       &:last-child {
-        border-bottom: none;
-      }
-      .square {
-        width: 80px;
-        height: 80px;
-        border-right: 2px solid #000;
-        font-size: 2.5rem;
-        padding: 0;
-        overflow: hidden;
-        transition: all 0.2s;
-        &:last-child {
-          border-right: none;
-        }
+        border-right: none;
       }
     }
   }
-  
+}
