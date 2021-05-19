@@ -28,6 +28,7 @@ button {
 .board {
   .board-row {
     display: flex;
+    margin:10px;
     flex-direction: row;
     border-bottom: 2px solid white;
     &:last-child {
@@ -45,5 +46,14 @@ button {
         border-right: none;
       }
     }
+  }
+}
+.start{
+  border-radius: 15px;
+  padding:0px 10px 0px 10px;
+  border: 2px solid white;
+  &:hover{
+    background-color: #4d7ace;
+    shadow: 5px 5px 5px black;
   }
 }
