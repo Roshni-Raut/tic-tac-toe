@@ -12,6 +12,7 @@ button {
   background: none;
   border: none;
   outline: none;
+  color:white;
   &:hover {
     cursor: pointer;
   }
@@ -33,7 +34,6 @@ button {
       border-bottom: none;
     }
     .square {
-      color:white;
       width: 80px;
       height: 80px;
       border-right: 2px solid white;
